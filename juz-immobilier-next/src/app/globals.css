@@ -14,3 +14,12 @@
 .legal-note{border-left:4px solid #d9d642;background:#edf0e5;padding:18px 22px;line-height:1.65;font-size:14px}
 footer a{display:block;color:inherit;font-size:inherit;text-decoration:none;margin-top:8px}
 footer a:hover{text-decoration:underline}
+
+
+.legal-table-wrap{overflow-x:auto;margin:20px 0 28px;border:1px solid #d6ded8;border-radius:12px}
+.legal-table{width:100%;border-collapse:collapse;min-width:520px;font-size:14px}
+.legal-table thead{background:#014933;color:#fff}
+.legal-table th,.legal-table td{padding:13px 15px;text-align:left;border-bottom:1px solid #d6ded8;vertical-align:top;line-height:1.55}
+.legal-table tbody tr:nth-child(even){background:#eef1ea}
+.legal-table tbody tr:last-child td,.legal-table tbody tr:last-child th{border-bottom:0}
+.legal-table tbody th{font-weight:600}
