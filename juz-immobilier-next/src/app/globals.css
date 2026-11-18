@@ -23,3 +23,111 @@ footer a:hover{text-decoration:underline}
 .legal-table tbody tr:nth-child(even){background:#eef1ea}
 .legal-table tbody tr:last-child td,.legal-table tbody tr:last-child th{border-bottom:0}
 .legal-table tbody th{font-weight:600}
+
+.site-brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.site-header .logo-button {
+  flex: 0 0 130px;
+}
+
+.agent-notice,
+.footer-grid .agent-notice,
+.property-details .agent-notice {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: inherit;
+}
+
+.site-brand .agent-notice {
+  max-width: 29ch;
+  margin: 0;
+}
+
+.site-header .nav nav {
+  gap: clamp(10px, 1.7vw, 25px);
+}
+
+.site-header nav a,
+.site-header .header-cta {
+  text-decoration: none;
+}
+
+.site-header nav a {
+  color: #ecf5ef;
+  font-size: 0.875rem;
+}
+
+.site-header nav a:hover,
+.site-header nav a:focus-visible {
+  color: var(--lime);
+}
+
+.photo-notice {
+  position: absolute;
+  inset: auto 0 0;
+  background: var(--green);
+  color: white;
+  padding: 9px 12px;
+}
+
+.modal-photo {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.modal .agent-notice {
+  margin-top: 16px;
+}
+
+.modal .photo-notice {
+  margin-top: 0;
+}
+
+.footer-grid .agent-notice {
+  max-width: 36ch;
+}
+
+@media (max-width: 1050px) {
+  .site-header .nav {
+    height: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 8px 0;
+    gap: 8px 20px;
+  }
+
+  .site-header .nav nav {
+    width: 100%;
+    order: 3;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .site-header .logo-button {
+    flex-basis: 92px;
+    height: 70px;
+  }
+
+  .site-header .logo-button img {
+    width: 92px;
+  }
+
+  .site-header .header-cta {
+    display: none;
+  }
+}
+
+.contact-panel a {
+  color: inherit;
+}
+
+.legal-container a {
+  overflow-wrap: anywhere;
+}
